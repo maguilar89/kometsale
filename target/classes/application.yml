@@ -1,0 +1,19 @@
+server:
+  port: 8084
+
+
+
+spring:
+  application:
+    name: kometsale-test
+  profiles:
+    active: dev
+
+  datasource:
+    hikari:
+      connectionTimeout: 90000
+      idleTimeout: 900000
+      maxLifetime: 1800000
+    password: 98765432
+    url: jdbc:mysql://localhost:3306/kometsale-test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Bogota&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull
+    username: root
